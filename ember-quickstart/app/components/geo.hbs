@@ -1,0 +1,10 @@
+<button type='button' {{on 'click' this.getLocation}}>Get geolocation</button>
+
+<h3>Latitude : {{this.lat}}</h3>
+<h3>Longitude : {{this.long}}</h3>
+
+{{#if this.address}}
+    <h2>{{this.address}}</h2>
+{{/if}}
+
+<div id="googleMap" style="width: 50vw; height: 50vh;"></div>

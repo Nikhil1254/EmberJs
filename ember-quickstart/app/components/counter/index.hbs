@@ -1,0 +1,9 @@
+<span>{{this.count}}</span>
+<span> x {{this.multiple}}</span>
+<span> = {{this.total}}</span>
+
+<div style='margin-top: 1rem;'>
+  <button type='button' {{on 'click' (fn this.change 1)}}>+1</button>
+  <button type='button' {{on 'click' (fn this.change -1)}}>-1</button>
+  <button type='button' {{on 'click' this.double}}>Double</button>
+</div>
